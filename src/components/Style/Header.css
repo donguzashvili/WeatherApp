@@ -4,6 +4,7 @@
   width: 100%;
   padding: 40px;
   background-color: #1e202b;
+  transition: all 0.4s linear;
 }
 .HeaderDiv img {
   height: 125px;
@@ -126,11 +127,14 @@
     display: block;
   }
   .openMenu {
-    display: block !important;
     transition: all ease-in-out 200ms;
+    overflow: hidden;
+    height: max-content;
+    height: 16rem;
   }
   .closedMenu {
-    display: none !important;
     transition: all ease-in-out 200ms;
+    height: 0;
+    overflow: hidden;
   }
 }
