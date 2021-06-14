@@ -1,0 +1,33 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif, Georgia, "Times New Roman", Times, serif;
+}
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #1e202b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #009ad8;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #026891;
+}
+.displayBlock {
+  display: block;
+}
+.displayNone {
+  display: none;
+}
+a {
+  text-decoration: none;
+}

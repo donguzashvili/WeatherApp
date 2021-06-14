@@ -1,0 +1,136 @@
+.HeaderDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+  background-color: #1e202b;
+}
+.HeaderDiv img {
+  height: 125px;
+}
+
+.HeaderDiv ul li {
+  list-style-type: none;
+  margin: 50px;
+  font-size: 1.25rem;
+  color: white;
+}
+.HeaderDiv ul li span {
+  text-decoration: none;
+  color: white;
+  padding: 5px 25px;
+  border: 2px solid transparent;
+}
+.HeaderDiv ul li span:hover {
+  color: #009ad8;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 2px solid #009ad8;
+}
+.selected {
+  color: #009ad8 !important;
+  border-radius: 30px;
+  border: 2px solid #009ad8 !important;
+}
+.toggleItems {
+  display: none;
+}
+.ResponsiveMenu {
+  display: none;
+}
+.mainHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.ClassicMenu {
+  display: flex;
+}
+.ClassicMenu li {
+  margin: 50px 20px !important;
+}
+@media screen and (max-width: 400px) {
+  .HeaderDiv img {
+    height: 80px;
+  }
+  .toggleMenu {
+    margin: 20px 0 0 0 !important;
+  }
+  .HeaderDiv ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ClassicMenu {
+    display: none !important;
+  }
+  .ResponsiveMenu {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .toggleMenu {
+    border: 1px solid #009ad8;
+    color: white;
+    border-radius: 35px;
+    height: 20px;
+    width: 20px;
+    height: 2em !important;
+    width: 2em !important;
+    padding: 10px;
+    margin: 60px 0 0 0;
+  }
+  .toggleMenu:hover {
+    color: #bfc1c8;
+  }
+  .toggleItems {
+    display: block;
+    color: black;
+    background-color: #262936;
+    padding: 0 !important;
+    width: 100%;
+    border-radius: 10px;
+    transition: all ease-in-out 200ms;
+  }
+  .toggleItems li {
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin: 0 !important;
+    padding: 20px 0;
+    transition: all 0.4s linear;
+    cursor: pointer;
+  }
+  .toggleItems li:last-child {
+    border-bottom: none;
+  }
+  .toggleItems li:hover {
+    color: #009ad8;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: #009ad8 0 0 15px;
+  }
+  .toggleItems li:last-child:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .toggleItems li:first-child:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .mainHeaderContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  .HeaderDiv {
+    display: block;
+  }
+  .openMenu {
+    display: block !important;
+    transition: all ease-in-out 200ms;
+  }
+  .closedMenu {
+    display: none !important;
+    transition: all ease-in-out 200ms;
+  }
+}

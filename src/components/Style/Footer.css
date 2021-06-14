@@ -1,0 +1,31 @@
+.footerContainer {
+  background-color: rgb(38, 41, 54);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.centerFooter h3 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  margin: 0 30px;
+  color: #bfc1c8;
+  transition: all 0.3 linear;
+}
+.icon:hover {
+  cursor: pointer;
+  color: #009ad8;
+  transform: scale(1.1);
+}
+.CopyRight {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}

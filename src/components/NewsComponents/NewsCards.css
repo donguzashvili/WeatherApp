@@ -1,0 +1,30 @@
+.cardHeader {
+  font-size: 2rem;
+  color: #fff;
+}
+.cardImage {
+  height: 300px;
+  width: 100%;
+  filter: blur(6px);
+  object-fit: cover;
+}
+.newsCard p {
+  color: #bfc1c8;
+}
+.newsCard {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.newsCard button {
+  background-color: #009ad8;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .cardHeader {
+    font-size: 1.5rem;
+  }
+}

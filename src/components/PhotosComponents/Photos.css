@@ -1,0 +1,66 @@
+.photosContainer {
+  background-color: #1e202b;
+  padding: 50px;
+}
+.stars .checked {
+  color: #009ad8 !important;
+}
+.fa-star {
+  color: #1e202b;
+}
+.photoTitle {
+  background-color: #262936;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.photoTitle h3 {
+  color: #fff;
+  font-size: 1rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.photoTitle p {
+  font-size: 0.875rem;
+  color: #bfc1c8;
+  margin: 30px 0;
+}
+.PhotoCard img {
+  height: 220px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  filter: blur(3px);
+}
+.PhotoCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.photoCardsContainer {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  grid-gap: 20px;
+}
+@media screen and (max-width: 992px) {
+  .photoCardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .PhotoCard {
+    display: block;
+  }
+  .photoTitle {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: unset;
+  }
+  .PhotoCard img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: unset;
+  }
+  .photosContainer {
+    padding: 50px 10px;
+  }
+}

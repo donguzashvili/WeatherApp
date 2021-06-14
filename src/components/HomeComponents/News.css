@@ -1,0 +1,28 @@
+.newsContainer {
+  display: flex;
+  background-color: rgb(38, 41, 54);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+.newsContainer h3 {
+  color: #ffff;
+  font-size: 0.875rem;
+}
+.newsContainer p {
+  color: #bfc1c8;
+  padding-right: 20px;
+  font-size: 0.875rem;
+}
+@media screen and (max-width: 400px) {
+  .newsContainer {
+    padding: 50px 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .newsContainer {
+    display: grid;
+  }
+}
