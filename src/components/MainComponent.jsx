@@ -8,9 +8,9 @@ import { useRoutes } from "hookrouter";
 
 const routes = {
   "/": () => <Home />,
-  news: () => <News />,
-  photos: () => <Photos />,
-  contact: () => <Contact />,
+  "/news": () => <News />,
+  "/photos": () => <Photos />,
+  "/contact": () => <Contact />,
 };
 function MainComponent() {
   const routeRes = useRoutes(routes);
