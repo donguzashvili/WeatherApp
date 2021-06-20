@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "./Style/img/logo.png";
 import "../components/Style/Header.css";
 import MenuIcon from "@material-ui/icons/Menu";
+import { A } from "hookrouter";
 
 function Header(props) {
   const [toggle, setToggle] = useState(false);
@@ -41,7 +42,7 @@ function Header(props) {
               className={props.button === "photos" ? "selected" : null}
               onClick={props.onClick}
             >
-              Contact
+              Photos
             </span>
           </li>
           <li>

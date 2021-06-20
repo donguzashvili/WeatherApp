@@ -4,9 +4,11 @@ import Search from "./HomeComponents/search";
 import Results from "./HomeComponents/Results";
 import News from "./HomeComponents/News";
 import Features from "./HomeComponents/Features";
+import { useRoutes, useRedirrect } from "hookrouter";
 
 function Home() {
   const [city, setCity] = useState("tbilisi");
+
   function handleChange(newValue) {
     setCity(newValue);
   }

@@ -34,9 +34,9 @@ class Results extends React.Component {
         const url = `https://api.weatherapi.com/v1/forecast.json?key=8246dc795dd340d98f7225813210706&q=${this.props.city}&days=10`;
         const res = await fetch(url);
         const data = await res.json();
-        console.log(data);
         this.setState({ data: data, forecast: data.forecast.forecastday });
       } catch (err) {
+        console.log(err);
         alert("Incorrect City");
       }
     }

@@ -11,6 +11,8 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "hookrouter": "^1.2.5",
     "react-scripts": "4.0.3",
     "react-weekday-picker": "^1.0.8",
     "web-vitals": "^1.1.2"
@@ -26,7 +28,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:react-hooks/recommended"
     ]
   },
   "browserslist": {
@@ -42,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.2.0"
   },
   "main": "index.js",
