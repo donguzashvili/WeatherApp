@@ -10,6 +10,7 @@ setBasepath("/WeatherApp");
 function App() {
   const [button, setButton] = useState("home");
   const toggle = (e) => {
+    console.log(e.target);
     if (e.target.id === "home") {
       setButton("home");
       navigate("/");

@@ -1,17 +1,24 @@
 import React from "react";
 import "./Photos.css";
 import PhotoCard from "./PhotoCard";
+import { navigate } from "hookrouter";
 
 function Photos(props) {
   return (
     <div className="photosContainer">
       <div className="location">
-        <span className="currentPage">
-          <p className="PreviousPage" id="home" onClick={props.onClick}>
+        <div className="currentPage">
+          <p
+            className="PreviousPage"
+            id="home"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             Home
           </p>
           <p className="arrow">➙</p> Photos
-        </span>
+        </div>
       </div>
       <div className="photoCardsContainer">
         <PhotoCard />

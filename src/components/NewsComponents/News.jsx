@@ -1,17 +1,24 @@
 import React from "react";
 import "./News.css";
 import NewsCard from "./NewsCard";
+import { navigate } from "hookrouter";
 
 function News(props) {
   return (
     <div className="newsPageContainer">
       <div className="location">
-        <span className="currentPage">
-          <p className="PreviousPage" id="home" onClick={props.onClick}>
+        <div className="currentPage">
+          <p
+            className="PreviousPage"
+            id="home"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             Home
           </p>
           <p className="arrow">➙</p> News
-        </span>
+        </div>
       </div>
       <div className="newsPageCards">
         <div className="cards">

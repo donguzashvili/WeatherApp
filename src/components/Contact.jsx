@@ -2,18 +2,25 @@ import { div } from "prelude-ls";
 import React from "react";
 import "./Style/Contact.css";
 import ReactImg from "./Style/img/logo-og.png";
+import { navigate } from "hookrouter";
 
 function Contact(props) {
   return (
     <div>
       <div className="contactContainer">
         <div className="location">
-          <span className="currentPage">
-            <p className="PreviousPage" id="home" onClick={props.onClick}>
+          <div className="currentPage">
+            <p
+              className="PreviousPage"
+              id="home"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               Home
             </p>
             <p className="arrow">➙</p> Contact
-          </span>
+          </div>
         </div>
         <h2>Contact me</h2>
         <div className="contactMe">
