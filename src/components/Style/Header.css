@@ -133,7 +133,7 @@
     transition: all ease-in-out 200ms;
     overflow: hidden;
     height: max-content;
-    height: 16rem;
+    height: 15.8rem;
   }
   .closedMenu {
     transition: all ease-in-out 200ms;
